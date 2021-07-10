@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+p {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
