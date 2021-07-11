@@ -7,24 +7,89 @@ $luxury-color: hsl(179, 100%, 13%);
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url("reset.css");
 
 body {
-    background-color: hsl(0, 0%, 95%);  
-    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    margin: 20px;
+    display: flex;  
+    flex-wrap: wrap;
+}
+section {
+    text-align: left;
+    padding: 50px;
+}
+
+section h1 {
+    color: hsl(0, 0%, 95%);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+}
+
+section p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: Lexend Deca;
+    line-height: 1.5em;
 }
 
 .sedans {
     background-color: $sedans-color;
+    border: 1px solid $sedans-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    button {
+        color: $sedans-color;
+    }
 }
 
 .suvs {
     background-color: $suvs-color;
+    border: 1px solid $suvs-color;
+
+    button {
+        color: $suvs-color;
+    }
 }
 
 .luxury {
     background-color: $luxury-color;
+    border: 1px solid $luxury-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    button {
+        color: $luxury-color;
+    }
 }
 
-p {
-    margin: 0;
+button {
+    background: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    outline: none;
+    padding: 1em 2em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Big Shoulders Display;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: .2em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        flex-wrap: nowrap;
+        margin: 100px;
+    }
+    
+    button {
+        margin-top: 50px;
+    }
 }
