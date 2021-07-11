@@ -45,6 +45,12 @@ section p {
     
     button {
         color: $sedans-color;
+
+        
+        &:hover {
+            background-color: $sedans-color;
+            color: hsl(0, 0%, 95%);
+        }
     }
 }
 
@@ -54,6 +60,12 @@ section p {
 
     button {
         color: $suvs-color;
+
+        
+        &:hover {
+            background-color: $suvs-color;
+            color: hsl(0, 0%, 95%);
+        }
     }
 }
 
@@ -65,6 +77,12 @@ section p {
 
     button {
         color: $luxury-color;
+
+        
+        &:hover {
+            background-color: $luxury-color;
+            color: hsl(0, 0%, 95%);
+        }
     }
 }
 
@@ -91,5 +109,15 @@ button {
     
     button {
         margin-top: 50px;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .luxury {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
     }
 }

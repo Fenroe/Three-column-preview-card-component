@@ -53,6 +53,11 @@ section p {
   color: #e38826;
 }
 
+.sedans button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
 .suvs {
   background-color: #006970;
   border: 1px solid #006970;
@@ -60,6 +65,11 @@ section p {
 
 .suvs button {
   color: #006970;
+}
+
+.suvs button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
 }
 
 .luxury {
@@ -71,6 +81,11 @@ section p {
 
 .luxury button {
   color: #004241;
+}
+
+.luxury button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
 }
 
 button {
@@ -95,6 +110,14 @@ button {
   }
   button {
     margin-top: 50px;
+  }
+  .sedans {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
